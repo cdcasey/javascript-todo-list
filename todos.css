@@ -12,7 +12,7 @@ h1 {
   font-weight:300;
   margin:10px 0 20px 0;
 }
-input {
+input#input-field {
   border:none;
   width:100%;
   font-size:22px;
@@ -49,3 +49,27 @@ ul li {
   box-shadow:0 2px 0 0 #662929;
   border-radius:4px;
 }
+
+input.check-off {
+  float: left;
+  margin-left: -15px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.delete-item {
+  float: right;
+  margin-left: 10px;
+}
+
+.check-off, .delete-item {
+  cursor: pointer;
+}
+
+.input-edit-field {
+  border:none;
+  font-size:22px;
+  background:#eee;
+  width: 90%;
+}
+
