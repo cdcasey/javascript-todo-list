@@ -26,7 +26,21 @@ todoItems.addEventListener('click', (event) => {
         // TODO: remove text. insert edit vield with removed text. handle hitting the enter key
         event.target.parentNode.appendChild(editField);
         editField.value = todoText;
+        editField.focus();
         event.target.remove();
     }
-
 })
+
+editField.addEventListener("keyup", function(event) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Trigger the button element with a click
+    //   document.getElementById("myBtn").click();
+        let newText = event.target.value;
+        event.target.parentNode.innerHTML = itemString.replace('%', newText);
+        // event.target.parentNode.appendChild(newText);
+        event.target.remove();
+    }
+  });
