@@ -54,7 +54,8 @@ input.check-off {
   float: left;
   margin-left: -15px;
   margin-top: 10px;
-  margin-right: 5px;
+  margin-right: 7px;
+  transform: scale(1.2);
 }
 
 .delete-item {
